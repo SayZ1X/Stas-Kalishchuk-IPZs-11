@@ -62,10 +62,10 @@
   &__title {
     color: #fff;
     font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
+    
+    
     font-weight: 700;
-    line-height: normal;
+    
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -113,20 +113,20 @@
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-right: 10px;
-    padding: 15px 0 15px 16px;
+    padding: 15px 16px;
     color: #fff;
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
       font-family: Roboto;
       font-size: 16px;
-      font-style: normal;
+      
       font-weight: 400;
       line-height: 125%;
       letter-spacing: 0.48px;
     }
 
     @media (max-width: 950px) {
-      padding: 15px 0 15px 16px;
+      padding: 15px 16px;
       margin-right: 0;
       margin-bottom: 20px;
     }
@@ -165,8 +165,8 @@
   &__link {
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
+    
+    
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
@@ -184,50 +184,40 @@
   @media (max-width: 950px) {
     margin-top: 0;
   }
-  // .footer-social__img
+
   &__img {
-    z-index: 2;
     position: relative;
-    margin-right: 34px;
-    &:last-child {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+
+    &:last-child{
       margin-right: 0;
     }
 
-    &:after {
-      content: "";
+    a{
       position: absolute;
-      top: -12px;
-      left: -12px;
       width: 44px;
       height: 44px;
-      background-color: rgba(255, 255, 255, 0.1);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       border-radius: 50%;
-      z-index: -1;
-    }
-
-    @media (min-width: 950px) {
-      &:hover {
-        &:hover {
-          &:after {
-            content: "";
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            width: 44px;
-            height: 44px;
-            background-color: #2196f3;
-            border-radius: 50%;
-            z-index: -1;
-            cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.10);;
+      
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+          &::before {
+            color: #fff;
           }
-        }
       }
-    }
 
-    span {
-      font-size: 20px;
-      &::before {
-        color: #fff;
+      &:hover{
+        background-color: #2196f3;
       }
     }
   }
@@ -246,7 +236,7 @@
     padding: 0 15px 15px 15px;
     margin-bottom: 32px;
     font-family: "Arial";
-    font-style: normal;
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 131.25%;

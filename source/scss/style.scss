@@ -29,6 +29,12 @@ body {
   background-color: $mainColor;
   font-family: $fontFamily;
 
+  
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+
+
   @media (max-width: $tab4) {
     &.lock {
       overflow: hidden;
@@ -95,9 +101,9 @@ a {
   text-align: center;
   font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
+  
   font-weight: 700;
-  line-height: normal;
+  
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }

@@ -100,13 +100,13 @@
     height: 100vh;
     z-index: 100;
     background: rgba(0, 0, 0, 0.5);
-    opacity: 0; // Скрываем фон и сам попап
-    pointer-events: none; // Запрещаем ему быть целью событий
+    opacity: 0;
+    pointer-events: none;
     transition: 0.5s all;
 
     &.active {
-      opacity: 1; // Показываем фон и попап
-      pointer-events: all; // Возвращаем события
+      opacity: 1;
+      pointer-events: all;
       transition: 0.5s all;
     }
   }
@@ -116,7 +116,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+    transform: translate(-50%, -50%) scale(0);
     background: #fff;
     width: 528px;
     max-width: 90%;
@@ -130,7 +130,7 @@
     }
 
     &.active {
-      transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+      transform: translate(-50%, -50%) scale(1);
       transition: 0.5s all;
     }
 
@@ -151,9 +151,9 @@
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
+    
     font-weight: 700;
-    line-height: normal;
+    
     letter-spacing: 0.6px;
     margin-bottom: 12px;
 
