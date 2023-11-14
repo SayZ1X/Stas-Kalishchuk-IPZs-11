@@ -56,11 +56,11 @@
       &::placeholder {
       }
 
-      &:focus {
+      &:hover,&:focus {
         border: 1px solid #2196f3;
       }
 
-      &:focus + .icon-input {
+      &:hover,&:focus + .icon-input {
         &:before {
           color: #2196f3;
         }

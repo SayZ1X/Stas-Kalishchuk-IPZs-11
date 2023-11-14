@@ -29,18 +29,18 @@
           </nav>
           <div class="header__contact header-contacts">
             <ul class="header-contacts__list">
-              <a href="mailto:info@devstudio.com">
-                <li class="header-contacts__item">
+              <li>
+                <a href="mailto:info@devstudio.com" class="header-contacts__item">
                   <span class="icon-mail-header"></span>
                   <div class="header-contacts__link header-contacts__link_mail">info@devstudio.com</div>
-                </li>
-              </a>
-              <a href="tel:+380961111111">
-                <li class="header-contacts__item">
+                </a>  
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="header-contacts__item">
                   <span class="icon-phone-header"></span>
                   <div class="header-contacts__link header-contacts__link_tel">+38 096 111 11 11</div>
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
 
             <div class="header-contacts__social">
@@ -315,9 +315,9 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__links">
-          <div class="footer__logo">
-            <img src="source/img/logo_white.png" alt="logo_white" />
-          </div>
+
+          <a class="footer__logo" href="index.html"><span>Web</span>Studio</a>
+
           <ul class="footer__menu footer-menu">
             <li class="footer-menu__item">
               <a class="footer-menu__link footer-menu__link_white" href="http://surl.li/lcpso" target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
@@ -429,15 +429,12 @@
     <script type="text/javascript" src="source/js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="source/js/mask.js"></script>
     <script type="text/javascript" src="source/js/scrollto.js"></script>
-    <script type="text/javascript" src="source/js/slider-b-f.js"></script>
 
     <script>
       $(document).ready(function () {
           $("#phone1").mask("+380 99-999-99-99");
       });
   </script>
-
-  <!-- ПасхалОчка -->
 
   </body>
 </html>

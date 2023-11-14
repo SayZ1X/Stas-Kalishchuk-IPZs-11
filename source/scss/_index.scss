@@ -142,6 +142,8 @@
 //! =========== Workshop ===========
 
 .workshop {
+  padding-bottom: 94px;
+
   @media (max-width: $tab3) {
     display: none;
   }
@@ -150,7 +152,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 94px;
   }
   // .workshop__title
   &__title {
@@ -227,7 +228,7 @@
     gap: 30px;
     justify-content: space-between;
 
-    @media (max-width: 946px) {
+    @media (max-width: 1020px) {
       display: grid;
       grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
       gap: 30px;
@@ -248,11 +249,7 @@
     border-radius: 0px 0px 4px 4px;
     background: #fff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    padding-bottom: 30px;
 
-    @media (max-width: 946px) {
-      padding-bottom: 24px;
-    }
     @media (max-width: $ml) {
       display: flex;
       flex-direction: column;
@@ -267,10 +264,13 @@
 .team-card {
  img {
    max-width: 100%;
-   margin-bottom: 30px;
  }
   // .team-card__inner
   &__inner {
+    padding: 30px 5px 30px 5px;
+    @media (max-width: 946px) {
+      padding: 30px 5px 24px 5px;
+    }
   }
   // .team-card__text
   &__text {
@@ -337,11 +337,8 @@
           }
       }
 
-      &:hover{
-        background-color: #2196f3;
-      }
-
-      &:hover{
+      &:hover,&:focus{
+          background-color: #2196f3;
           span{
             &:before{
               color: #FFF;
@@ -396,7 +393,8 @@
     span {
       font-size: 41px;
     }
-      &:hover {
+
+      &:hover,&:focus {
         border-color: #2196f3;
         span {
           &::before {

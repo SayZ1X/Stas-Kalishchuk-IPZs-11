@@ -16,7 +16,7 @@
   padding: 10px 28px;
   
   @media (min-width: $tab3) {
-    &:hover {
+    &:hover,&:focus {
       background-color: #188CE8;
       transition: 0.2s;
     }
