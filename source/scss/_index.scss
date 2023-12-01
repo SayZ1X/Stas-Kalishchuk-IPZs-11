@@ -79,7 +79,7 @@
     gap: 30px;
     justify-content: space-between;
 
-    @media (max-width: $tab3) {
+    @media (max-width: 1020px) {
       display: grid;
       grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
       gap: 30px;
@@ -325,6 +325,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
+      transition: 0.3s;
       
       span {
         position: absolute;
@@ -334,13 +335,16 @@
         font-size: 20px;
           &::before {
             color: #AFB1B8;
+            transition: 0.3s;
           }
       }
 
       &:hover,&:focus{
           background-color: #2196f3;
+          transition: 0.3s;
           span{
             &:before{
+              transition: 0.3s;
               color: #FFF;
             }
         }
@@ -371,7 +375,7 @@
     grid-template-rows: 92px;
     gap: 30px;
 
-    @media (max-width: $tab3) {
+    @media (max-width: 1020px) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 92px 92px;
       gap: 30px;
@@ -390,15 +394,19 @@
     justify-content: center;
     border-radius: 4px;
     border: 1px solid #afb1b8;
+    transition: 0.5s;
+
     span {
       font-size: 41px;
     }
 
       &:hover,&:focus {
         border-color: #2196f3;
+        transition: 0.5s;
         span {
           &::before {
             color: #2196f3;
+            transition: 0.5s;
           }
         }
       }

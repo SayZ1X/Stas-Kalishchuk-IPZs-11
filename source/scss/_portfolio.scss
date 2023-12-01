@@ -93,6 +93,7 @@
     font-weight: 500;
     line-height: 162.5%;
     letter-spacing: 0.48px;
+    transition: 0.3s;
     &:hover,&:focus {
       border-radius: 4px;
       background: #2196f3;
@@ -106,6 +107,7 @@
       line-height: 162.5%;
       letter-spacing: 0.48px;
       cursor: pointer;
+      transition: 0.3s;
     }
   }
 }
